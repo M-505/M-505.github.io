@@ -1,0 +1,88 @@
+#logo-container img {
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover; 
+}
+
+html {
+  height: 100%; /* Ensure html element takes up full viewport height */
+}
+
+body {
+  min-height: 100%; /* Ensure body element covers at least full viewport height */
+  background-image: url('img/background.jpg');
+  background-size: cover;         /* Cover the entire viewport */
+  background-repeat: no-repeat;   /* Don't repeat the image */
+  background-position: center;    /* Center the image */
+}
+
+label[for="departure-airport"] { /* Select the label by its "for" attribute */
+  background-color: green;    /* Set background color to white */
+  padding: 5px 6px;        /* Add padding around the text */
+  border-radius: 5px;       /* Optional: Round the corners */
+}
+label[for="destination-airport"] { /* Select the label by its "for" attribute */
+  background-color: green;    /* Set background color to white */
+  padding: 5px 10px;        /* Add padding around the text */
+  border-radius: 5px;       /* Optional: Round the corners */
+}
+label[for="departure-date"] { /* Select the label by its "for" attribute */
+  background-color: green;    /* Set background color to white */
+  padding: 5px 10px;        /* Add padding around the text */
+  border-radius: 5px;       /* Optional: Round the corners */
+}
+label[for="return-date"] { /* Select the label by its "for" attribute */
+  background-color: green;    /* Set background color to white */
+  padding: 5px 10px;        /* Add padding around the text */
+  border-radius: 5px;       /* Optional: Round the corners */
+}
+label[for="passengers"] { /* Select the label by its "for" attribute */
+  background-color: green;    /* Set background color to white */
+  padding: 5px 10px;        /* Add padding around the text */
+  border-radius: 5px;       /* Optional: Round the corners */
+}
+
+.airport-results-box {
+    position: absolute; 
+    width: 100%;  
+    max-height: 300px; 
+    overflow-y: auto;  
+    border: 1px solid #d4d4d4;
+    margin-top: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+  }
+  
+  .autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  
+  .autocomplete-item:hover {
+    background-color: #e9e9e9; 
+  }
+
+  #result-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  #result-box table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #result-box th, #result-box td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #result-box th {
+    background-color: #f2f2f2;
+  }
+  
